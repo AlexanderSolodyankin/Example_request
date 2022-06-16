@@ -2,6 +2,7 @@ import React from 'react';
 import axios from "axios";
 import { useState } from "react";
 
+
 const Catalog = () => {
     let [list, setList] = useState([]);
 
@@ -22,9 +23,7 @@ const Catalog = () => {
                                 <p>Отчество пользователя: {el.infoUser.patrol}</p>
                                 <p>Возраст пользователя: {el.infoUser.age}</p>
                                 <p>Телефон пользователя: {el.infoUser.phone}</p>
-
                             </div>
-
                         </li>
                     )
                 })
@@ -37,6 +36,9 @@ const Catalog = () => {
         <div>
             <h1>Каталог</h1>
             <a href='/'> Домашняя страница </a>
+            <br />
+            <a href='/registry'> регистрация </a>
+            <br />
 
             <ul>
                 {list}
